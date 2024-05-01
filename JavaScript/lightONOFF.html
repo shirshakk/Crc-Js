@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src="../JavaScript/off.gif" width="150px" id="im" onmouseover="on()" onmouseleave="off()">
+        <!-- <button onclick="on()">On</button>
+        <button onclick="off()">off</button> -->
+    </center>
+    <script>
+        let button=document.getElementById("im");
+        function on(){
+            button.setAttribute("src","../JavaScript/on.gif")
+        }
+    function off(){
+            button.setAttribute("src","../JavaScript/off.gif")
+        }
+    </script>
+</body>
+</html>

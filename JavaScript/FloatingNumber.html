@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the Number" id="side1">
+    <button onclick="Check()">Check</button>
+    <h1>Answer:<span id="Answer"></span></h1>
+    <script>
+        function Check(){
+            let a=parseFloat(document.getElementById('side1').value)
+            if(a==0)
+            {
+                document.getElementById("Answer").innerHTML="Zero";
+            }
+            else if(a>0)
+            {
+                document.getElementById("Answer").innerHTML="Positive";
+            }
+            else if(a<0)
+            {
+                document.getElementById("Answer").innerHTML="Negative";
+            }
+        }
+    </script>
+</body>
+</html>

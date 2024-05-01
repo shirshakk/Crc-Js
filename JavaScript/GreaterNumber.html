@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" placeholder="Enter the number" id="num1">
+        <input type="text" placeholder="Enter the number" id="num2">
+        <input type="text" placeholder="Enter the number" id="num3">
+        <button onclick="Check()">Check</button>
+    </center>
+</body>
+    <script>
+        function Check(){            
+            let a=parseFloat(document.getElementById("num1").value);
+            let b=parseFloat( document.getElementById("num2").value);
+            let c=parseFloat( document.getElementById("num3").value);
+            if(a>b && a>c){
+               alert(`Greater number:${a}`);          
+            }
+            else if(b>a && b>c)
+            {
+                alert(`Greater Number:${b}`);
+            }
+            else{
+                alert(`Greater Number${c}`);
+            }
+    }
+   </script>
+</html>
