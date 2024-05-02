@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" placeholder="Enter the number" id="t1">
+    <input type="text" placeholder="Enter the number" id="t2">
+    <button onmouseover="add()">add</button>
+    <button onmouseover="sub()">sub</button>
+    <button onmouseover="mul()">mul</button>
+    <script>
+        function add(){
+            let a=Number(document.getElementById('t1').value);
+            let b=Number(document.getElementById('t2').value);
+            alert(a+b);
+        }
+        function sub(){
+            let a=Number(document.getElementById('t1').value);
+            let b=Number(document.getElementById('t2').value);
+            alert(a-b);
+        }
+        function mul(){
+            let a=Number(document.getElementById('t1').value);
+            let b=Number(document.getElementById('t2').value);
+            alert(a*b);
+        }
+    </script>
 </body>
 </html>
