@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table border="2px">
+        <tr>
+            <th>OTP</th>
+            <th>Output</th>
+w</tr>
+        <tr>
+            <td><button onclick="otp()">OTP</button></td>
+            <td id="h"></td>  
+         </tr> 
+    </table>
+    <script>
+        function otp(){
+            let ans=Math.floor(Math.random()*(99999-10000))+10000;
+            document.getElementById("h").innerHTML=ans;
+        }
+    </script>
 </body>
 </html>
