@@ -32,3 +32,13 @@ function passwordGenerate(){
     console.log(password)
     document.getElementById("Password").innerHTML=password; 
 }
+function RPS(){
+    let userInput;
+    const buttons=document.querySelectorAll(".btncc");
+    buttons.forEach(button=>{
+        button.addEventListener("click",function(){
+            console.log(button.value);
+        })
+    })
+    
+}
