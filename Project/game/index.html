@@ -20,7 +20,8 @@
                         <h2 style="margin: auto;">Dice game</h2>
                     </div>
                         <div class="image" style="margin-left: 25px;">
-                            <img id="image" src="Dice Image/dice6.png" width="200px" height="200px" style="margin-bottom: 0px;margin-left: 20px;">
+                            <img id="image" src="Dice Image/dice6.png" width="130px" height="130px" style="margin-bottom: 0px;margin-bottom: 20px;margin-top: 50px  ;">
+                            <img id="Computerimage" src="Dice Image/dice6.png" width="130px" height="130px" style="margin-bottom: 0px;margin-bottom: 20px;margin-top: 50px  ;">
                         </div>
                         <div class="Result">
                             <p id="Result">Start Game</p>
@@ -62,25 +63,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card">  
                 <div class="content">
                     <div class="gameName">
                         <h2 style="font-size: 37px;">Rock paper Scissor</h2>
                     </div>
                     <div class="button">
                     <div class="row">
-                        <button class="btncc"  type="button" value="Rock" onclick="RPS()"><img src="Rock Paper Scissor image\fist.png " height="70px" width="70px" style="margin-top: 12px;"></button>
+                        <button class="RPS"  type="button" id="Rock" onclick="RPS(Rock)"><img src="Rock Paper Scissor image\fist.png " height="70px" width="70px" style="margin-top: 12px;"></button>
                     </div>
                     <div class="row">
-                        <button class="btncc"  type="button" value="Paper" onclick="RPS()"><img src="Rock Paper Scissor image\hand-paper.png"  height="70px" width="70px" style="margin-top: 12px;"></button>
-                        <button class="btncc"  type="button" value="Scissor" onclick="RPS()"><img src="Rock Paper Scissor image\scissors.png"  height="70px" width="70px" style="margin-top: 12px;"></button>
+                        <button class="RPS"  type="button" id="Paper" onclick="RPS(Paper)"><img src="Rock Paper Scissor image\hand-paper.png"  height="70px" width="70px" style="margin-top: 12px;"></button>
+                        <button class="RPS"  type="button" id="Scissor" onclick="RPS(Scissor)"><img src="Rock Paper Scissor image\scissors.png"  height="70px" width="70px" style="margin-top: 12px;"></button>
                     </div>
                     </div>
                     <div class="Answer">
-                        <h3 style="font-size: 45px;margin-bottom: 10px;">Result:</h3>
+                        <p id="Answer"></p>
                         <div class="Display">
-                            <div class="left"><p style="font-size: 25px; margin-left: 5px;">Computer:</p></div>
-                            <div class="right"><p style="font-size: 25px; margin-left: 5px;">User:</p></div>
+                            <div class="left"><p style="font-size: 25px; margin-left: 5px;">Computer:<span id="Computer"></span></p></div>
+                            <div class="right"><p style="font-size: 25px; margin-left: 5px;">User:<span id="User"></span></p></div>
                         </div>
                     </div>
                 </div>
