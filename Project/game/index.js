@@ -53,3 +53,25 @@ function RPS(Input) {
     document.getElementById("User").innerHTML=userPoints;
 
 }
+function blackjack()
+{
+  let firstcard = Math.floor(Math.random()*11)
+  let secondcard = Math.floor(Math.random()*11)
+  let sum = firstcard + secondcard
+  let cardss = [firstcard, secondcard]
+  for(let i=0; i<cardss.length;i++)
+    {
+      if(sum>21)
+        {
+          document.getElementById("result").innerHTML= "You Lost"
+        }
+        else if(sum==21)
+        {
+          document.getElementById("result").innerHTML= "You have a blackjack"
+        }
+        else
+        {
+          document.getElementById("result").innerHTML= "Draw another card"
+        }
+    }
+}
