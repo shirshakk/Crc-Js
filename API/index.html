@@ -22,10 +22,37 @@
                 </select>
             </div>
         </div>
+        <div class="container2">
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
     </div>
 
     <script>
         async function fetchdata() {
+            const food= 'https://www.themealdb.com/api/json/v1/1/categories.php';
+            const foodResponse=await fetch(food);
+            const foodData= await foodResponse.json();
+            const display=foodData;
+            const container2=document.createElement("div");
+            container2.classList.add("container2")
+            console.log(foodData)
+            const card=document.createElement('div');
+            card.classList.add("card");
+            const image=document.createElement("img");
+            image.src=foodData.categories[0].strCategoryThumb
+            card.appendChild(image);
+            container2.appendChild(card)
+
+
+
             const url = `https://www.themealdb.com/api/json/v1/1/list.php?c=list`;
                 const response = await fetch(url);
                 const data = await response.json();
