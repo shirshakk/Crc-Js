@@ -1,6 +1,8 @@
 function AddEvent() {
+    
     var text = document.getElementById("text").value;
     var box = document.querySelector('.box');
+    
     var bottomDiv = document.querySelector('.bottom');
     var cardDiv = document.createElement('div');
     cardDiv.className = 'card';
@@ -20,4 +22,7 @@ function AddEvent() {
     cardDiv.appendChild(paragraph);
     bottomDiv.appendChild(cardDiv);
     box.appendChild(bottomDiv);
+    localStorage.setItem('mytask',box.innerHTML)
 }
+
+document.querySelector('.box').innerHTML = localStorage.getItem('mytask');
